@@ -1,0 +1,28 @@
+# =========================
+# .NET 8 (Backend)
+# =========================
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.log
+.vs/
+
+# Archivos de configuración sensibles
+appsettings.Development.json
+
+# =========================
+# Angular (Frontend)
+# =========================
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/
+frontend/.cache/
+frontend/.vscode/
+
+# =========================
+# VS Code / Editor
+# =========================
+.vscode/
+
