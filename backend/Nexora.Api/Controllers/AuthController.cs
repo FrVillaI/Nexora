@@ -40,4 +40,13 @@ public class AuthController : ControllerBase
             return BadRequest(new { mensaje = ex.Message });
         }
     }
+
+
+    [HttpGet("generate-hash")]
+    [AllowAnonymous]
+    public ActionResult<string> GenerateHash(string password)
+    {
+        var hash = BCrypt.Net.BCrypt.HashPassword(password);
+        return Ok(hash);
+    }
 }
